@@ -1,0 +1,30 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.4.32'
+    id "com.bnorm.robocode" version "0.1.0"
+}
+
+group 'pl.cmil.robocodetemplate'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+}
+
+robocode {
+    robots {
+        register("KotlinBot") {
+            classPath = "robocodetemplate.KotlinBot"
+            version = "1.0"
+            description = "Kotlin robot Example"
+        }
+        register("JavaBot") {
+            classPath = "robocodetemplate.JavaBot"
+            version = "1.0"
+            description = "Java robot Example"
+        }
+    }
+}
