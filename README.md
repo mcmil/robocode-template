@@ -6,21 +6,21 @@ This template uses the [robocode-gradle-plugin](https://github.com/bnorm/) to bo
  Refer to the plugin's documentation in order to get more information.
 
 The project contains the following robots scaffolding that you can use to build your own ones: 
-* robocodetemplate.JavaBot (java/robocodetemplate/JavaBot.java) 
-* robocodetemplate.KotlinBot (kotlin/robocodetemplate/KotlinBot.kt)
+* JavaBot (java/pl/cmil/template/JavaBot.java) 
+* template.KotlinBot (kotlin/pl/cmil/template/KotlinBot.kt)
 
-Robot naming convention is `{package}.{robotName}`. It's recommended to use single-level packaging (for instance `robocodetemplate`, not `org.example.robocodtemplate` ).
+Robot naming convention is `{package}.{robotName}`. _Warning_: Don't use _robocode_ in your package name. 
 Additionally every robot has to be registered in the `build.gradle` file:
 ```groovy
 robocode {
     robots {
         register("KotlinBot") {
-            classPath = "robocodetemplate.KotlinBot"
+            classPath = "pl.cmil.template.KotlinBot"
             version = "1.0"
             description = "Kotlin robot Example"
         }
         register("JavaBot") {
-            classPath = "robocodetemplate.JavaBot"
+            classPath = "pl.cmil.template.JavaBot"
             version = "1.0"
             description = "Java robot Example"
         }

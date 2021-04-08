@@ -17,12 +17,12 @@ dependencies {
 robocode {
     robots {
         register("KotlinBot") {
-            classPath = "robocodetemplate.KotlinBot"
+            classPath = "pl.cmil.template.KotlinBot"
             version = "1.0"
             description = "Kotlin robot Example"
         }
         register("JavaBot") {
-            classPath = "robocodetemplate.JavaBot"
+            classPath = "pl.cmil.template.JavaBot"
             version = "1.0"
             description = "Java robot Example"
         }

@@ -1,4 +1,4 @@
-package robocodetemplate
+package pl.cmil.template
 
 import robocode.Robot
 import robocode.ScannedRobotEvent
